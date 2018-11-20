@@ -1,0 +1,581 @@
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BOOT_COMPLETED:
+        98cf2f6 com.qualcomm.location/.LocationServiceReceiver filter c3647e
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.NEW_OUTGOING_CALL:
+        34e96f7 com.qualcomm.location/.GpsNetInitiatedHandler$OutgoingCallReceiver filter 3445ddf
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.android.location.service.v3.NetworkLocationProvider:
+        47fb964 com.qualcomm.location/.izatprovider.NetworkLocationService filter 8771e00
+          Action: "com.android.location.service.v2.NetworkLocationProvider"
+          Action: "com.android.location.service.v3.NetworkLocationProvider"
+      com.qualcomm.location.LocationService:
+        c3697cd com.qualcomm.location/.LocationService filter 5a00732
+          Action: "com.qualcomm.location.LocationService"
+      com.android.location.service.FusedLocationProvider:
+        b0d4882 com.qualcomm.location/.izatprovider.UnifiedLocationService filter a007c83
+          Action: "com.android.location.service.FusedLocationProvider"
+      com.android.location.service.v2.NetworkLocationProvider:
+        47fb964 com.qualcomm.location/.izatprovider.NetworkLocationService filter 8771e00
+          Action: "com.android.location.service.v2.NetworkLocationProvider"
+          Action: "com.android.location.service.v3.NetworkLocationProvider"
+      com.qualcomm.location.izat.IzatService:
+        74bab93 com.qualcomm.location/.izat.IzatService filter 9dbf639
+          Action: "com.qualcomm.location.izat.IzatService"
+
+Permissions:
+  Permission [com.qualcomm.permission.IZAT] (3107d0):
+    sourcePackage=com.qualcomm.location
+    uid=1000 gids=[1021, 1000, 2002, 1015, 1023, 1010] type=1 prot=signature|privileged
+    perm=Permission{21e3c9 com.qualcomm.permission.IZAT}
+    packageSetting=PackageSetting{4da3c62 com.qualcomm.location/1000}
+  Permission [com.qualcomm.permission.ACCESS_GTPWIFI_API] (84b6ace):
+    sourcePackage=com.qualcomm.location
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{bfb6def com.qualcomm.permission.ACCESS_GTPWIFI_API}
+    packageSetting=PackageSetting{4da3c62 com.qualcomm.location/1000}
+
+Key Set Manager:
+  [com.qualcomm.location]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.qualcomm.location] (4da3c62):
+    userId=1000
+    sharedUser=SharedUserSetting{b66d0fc android.uid.system/1000}
+    pkg=Package{d5bf385 com.qualcomm.location}
+    codePath=/system/priv-app/com.qualcomm.location
+    resourcePath=/system/priv-app/com.qualcomm.location
+    legacyNativeLibraryDir=/system/priv-app/com.qualcomm.location/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=27 targetSdk=23
+    versionName=1.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{23765da com.qualcomm.location}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVILEGED ]
+    dataDir=/data/user/0/com.qualcomm.location
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      com.android.location.provider
+      izat.xt.srv
+    usesLibraryFiles:
+      /system/framework/izat.xt.srv.jar
+      /system/framework/com.android.location.provider.jar
+    timeStamp=2009-01-01 00:00:00
+    firstInstallTime=2009-01-01 00:00:00
+    lastUpdateTime=2009-01-01 00:00:00
+    signatures=PackageSignatures{33afa0b [ec24e326]}
+    installPermissionsFixed=true installStatus=1
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]    forceFull=true
+    declared permissions:
+      com.qualcomm.permission.IZAT: prot=signature|privileged, INSTALLED
+      com.qualcomm.permission.ACCESS_GTPWIFI_API: prot=signature|privileged, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WAKE_LOCK
+      android.permission.RECEIVE_SMS
+      android.permission.RECEIVE_WAP_PUSH
+      com.qualcomm.permission.IZAT
+      com.qualcomm.permission.ACCESS_LOCATION_API
+      com.qualcomm.permission.ACCESS_GTPWIFI_API
+      android.permission.PROCESS_OUTGOING_CALLS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_PHONE_STATE
+      android.permission.CONTROL_LOCATION_UPDATES
+      android.permission.MANAGE_USERS
+    install permissions:
+      com.meizu.voiceassistant.push.permission.MESSAGE: granted=true
+      com.meizu.safe.alphame.permission.DATA: granted=true
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.REGISTER_WINDOW_MANAGER_LISTENERS: granted=true
+      android.permission.BIND_INCALL_SERVICE: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.meizu.flyme.sdkstage.permission.C2D_MESSAGE: granted=true
+      android.permission.CONFIGURE_WIFI_DISPLAY: granted=true
+      android.permission.CONFIGURE_DISPLAY_COLOR_MODE: granted=true
+      android.permission.ACCESS_WIMAX_STATE: granted=true
+      android.permission.SET_PROCESS_LIMIT: granted=true
+      com.meizu.safe.permission.default_protect: granted=true
+      com.android.launcher3.permission.READ_SETTINGS: granted=true
+      com.qualcomm.permission.READPROC: granted=true
+      android.permission.RESTART_PACKAGES: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.BIND_DEVICE_ADMIN: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_CHECKIN_PROPERTIES: granted=true
+      android.permission.ACCESS_MOCK_LOCATION: granted=true
+      com.meizu.flyme.filemanager.permission.READ_REMARKPROVIDER: granted=true
+      com.meizu.safe.push.permission.MESSAGE: granted=true
+      com.meizu.safe.permission.ANTI_VIRUS: granted=true
+      com.meizu.battery.permission.ui: granted=true
+      flyme.intent.action.facerecognition.ACTION_FROZEN_RESET: granted=true
+      android.permission.INSTALL_LOCATION_PROVIDER: granted=true
+      com.meizu.flyme.permission.UPDATE: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      com.meizu.flyme.appcenter.permission.EXTERNAL_INSTALL: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.BROADCAST_PHONE_ACCOUNT_REGISTRATION: granted=true
+      android.permission.CONTROL_LOCATION_UPDATES: granted=true
+      android.permission.GET_TOP_ACTIVITY_INFO: granted=true
+      com.meizu.assistant.permission.UPDATE_CARD: granted=true
+      android.permission.CLEAR_APP_USER_DATA: granted=true
+      com.meizu.pps.permission.READ_SETTINGS: granted=true
+      com.qihoo.antivirus.update.permission.block_sdk_104415: granted=true
+      android.permission.BROADCAST_CALLLOG_INFO: granted=true
+      android.permission.INSTALL_PACKAGES: granted=true
+      android.permission.SHUTDOWN: granted=true
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE: granted=true
+      android.permission.NFC: granted=true
+      com.meizu.flymelab.features.READ: granted=true
+      android.permission.NETWORK_SETTINGS: granted=true
+      android.permission.START_ANY_ACTIVITY: granted=true
+      android.permission.CALL_PRIVILEGED: granted=true
+      android.permission.MANAGE_APP_TOKENS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.MASTER_CLEAR: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      com.meizu.flyme.launcher.permission.READ_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      flyme.permission.ROOT_RECOVERY_STATE: granted=true
+      com.android.launcher3.permission.RECEIVE_LAUNCH_BROADCASTS: granted=true
+      android.permission.PEERS_MAC_ADDRESS: granted=true
+      android.permission.DEVICE_POWER: granted=true
+      com.android.launcher3.permission.WRITE_SETTINGS: granted=true
+      com.flyme.netadmin.push.permission.MESSAGE: granted=true
+      android.permission.REMOVE_TASKS: granted=true
+      android.permission.READ_PRINT_SERVICES: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      com.meizu.permission.WRITE_SCENE_INFO: granted=true
+      android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS: granted=true
+      com.meizu.safe.alphame.provider.permission: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CAPTURE_AUDIO_HOTWORD: granted=true
+      android.permission.WRITE_MEDIA_STORAGE: granted=true
+      android.permission.WRITE_BLOCKED_NUMBERS: granted=true
+      com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL: granted=true
+      android.permission.SET_ANIMATION_SCALE: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.ACCESS_SURFACE_FLINGER: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.meizu.safe.permission.QR_CODE_LOCAL_DB: granted=true
+      com.meizu.wifiadmin.permission.WIFI_CLICKED: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.browser.permission.READ_HISTORY_BOOKMARKS: granted=true
+      com.meizu.pps.push.permission.MESSAGE: granted=true
+      android.permission.GET_INTENT_SENDER_INTENT: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CONTROL_VPN: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      android.permission.READ_PRECISE_PHONE_STATE: granted=true
+      android.permission.MANAGE_FINGERPRINT: granted=true
+      com.qualcomm.permission.IZAT: granted=true
+      android.permission.BIND_CONNECTION_SERVICE: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCOUNT_MANAGER: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.INTERACT_ACROSS_USERS_FULL: granted=true
+      android.permission.BIND_APPWIDGET: granted=true
+      android.permission.STOP_APP_SWITCHES: granted=true
+      android.permission.BATTERY_STATS: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS: granted=true
+      android.permission.TETHER_PRIVILEGED: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      com.meizu.networkmanager.control_command: granted=true
+      com.flyme.telecom.usagedata.service.permissions.PRIVATE_BROADCAST: granted=true
+      android.permission.MOVE_PACKAGE: granted=true
+      android.permission.READ_BLOCKED_NUMBERS: granted=true
+      com.qualcomm.permission.wfd.QC_WFD: granted=true
+      android.permission.READ_SEARCH_INDEXABLES: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.TRIGGER_TIME_ZONE_RULES_CHECK: granted=true
+      android.permission.ACCESS_DOWNLOAD_MANAGER: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.HARDWARE_TEST: granted=true
+      android.permission.WRITE_SMS: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE: granted=true
+      android.permission.BIND_JOB_SERVICE: granted=true
+      android.permission.CONFIRM_FULL_BACKUP: granted=true
+      com.meizu.dataservice.push.permission.MESSAGE: granted=true
+      android.permission.SET_TIME: granted=true
+      android.permission.WRITE_APN_SETTINGS: granted=true
+      com.meizu.networkmanager.permission.OFFER_OR_UPDATE_DATA: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      com.meizu.battery.permission.service: granted=true
+      android.permission.PACKAGE_VERIFICATION_AGENT: granted=true
+      android.permission.SET_ORIENTATION: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.SET_PREFERRED_APPLICATIONS: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.BACKUP: granted=true
+      android.permission.CHANGE_CONFIGURATION: granted=true
+      android.permission.USER_ACTIVITY: granted=true
+      android.permission.LOCAL_MAC_ADDRESS: granted=true
+      android.permission.READ_LOGS: granted=true
+      android.permission.COPY_PROTECTED_DATA: granted=true
+      meizu.alphame.USER_BEHAVIOR: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      com.meizu.safe.SDK_PROVIDER: granted=true
+      android.permission.SET_KEYBOARD_LAYOUT: granted=true
+      android.permission.READ_NETWORK_USAGE_HISTORY: granted=true
+      com.meizu.mcare.push.permission.MESSAGE: granted=true
+      com.meizu.facerecognition.permission.ACTION_FROZEN_RESET: granted=true
+      android.permission.MANAGE_APP_OPS_RESTRICTIONS: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.MANAGE_USER_OEM_UNLOCK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.REQUEST_NETWORK_SCORES: granted=true
+      android.permission.WRITE_USER_DICTIONARY: granted=true
+      com.meizu.facerecognition.permission.FACE_RECOGNITION: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      broadcast.cne.permission: granted=true
+      android.permission.REBOOT: granted=true
+      meizu.permission.SWITCH_SYSTEM_MODES: granted=true
+      com.meizu.permission.READ_PRIVACY_NUMBER: granted=true
+      android.permission.OEM_UNLOCK_STATE: granted=true
+      android.permission.MANAGE_DEVICE_ADMINS: granted=true
+      android.permission.CLEAR_APP_CACHE: granted=true
+      com.meizu.battery.push.permission.MESSAGE: granted=true
+      android.permission.CHANGE_APP_IDLE_STATE: granted=true
+      com.meizu.pps.permission.WRITE_SETTINGS: granted=true
+      android.permission.MANAGE_NETWORK_POLICY: granted=true
+      com.meizu.stats.permission.READ_USAGESTATS: granted=true
+      com.qualcomm.permission.ACCESS_GTPWIFI_API: granted=true
+      android.permission.SET_POINTER_SPEED: granted=true
+      android.permission.MANAGE_NOTIFICATIONS: granted=true
+      android.permission.CONNECTIVITY_INTERNAL: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      com.android.browser.permission.WRITE_HISTORY_BOOKMARKS: granted=true
+      android.permission.OVERRIDE_WIFI_CONFIG: granted=true
+      android.permission.FORCE_STOP_PACKAGES: granted=true
+      com.meizu.permission.READ_SCENE_INFO: granted=true
+      meizu.permission.BIND_PRIVACY_CONTROLER: granted=true
+      android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS: granted=true
+      android.permission.ACCESS_NOTIFICATIONS: granted=true
+      com.meizu.remotecooperation.access.permission.JUMP: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.certinstaller.INSTALL_AS_USER: granted=true
+      android.permission.BIND_ACCESSIBILITY_SERVICE: granted=true
+      com.meizu.battery.provider.permission: granted=true
+      com.meizu.mstore.permission.appdownload: granted=true
+      com.meizu.safe.alphame.permission.DATA_CHANGE: granted=true
+      android.permission.READ_USER_DICTIONARY: granted=true
+      com.meizu.permission.CONTROL_VPN: granted=true
+      com.meizu.battery.permission.C2D_MESSAGE: granted=true
+      com.android.launcher3.permission.RECEIVE_FIRST_LOAD_BROADCAST: granted=true
+      com.meizu.safe.permission.QR_CODE_SCAN_SERVICE: granted=true
+      com.meizu.flyme.sdkstage.push.permission.MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.CHANGE_WIMAX_STATE: granted=true
+      com.meizu.flyme.update.push.permission.MESSAGE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.PACKET_KEEPALIVE_OFFLOAD: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.STATUS_BAR: granted=true
+      android.permission.READ_FRAME_BUFFER: granted=true
+      com.flyme.permission.PHONE_STATE: granted=true
+      com.meizu.permission.SEARCH_SETTINGS: granted=true
+      android.permission.DUMP: granted=true
+      android.permission.LOCATION_HARDWARE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.INJECT_EVENTS: granted=true
+      android.permission.BIND_NETWORK_RECOMMENDATION_SERVICE: granted=true
+      com.qihoo.antivirus.update.permission.clear_sdk_meizu: granted=true
+      android.permission.UPDATE_APP_OPS_STATS: granted=true
+      android.permission.DELETE_PACKAGES: granted=true
+      com.meizu.flyme.appcenter.permission.action.perform: granted=true
+    User 0: ceDataInode=5529652 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+
+Shared users:
+  SharedUser [android.uid.system] (b66d0fc):
+    userId=1000
+    install permissions:
+      com.meizu.voiceassistant.push.permission.MESSAGE: granted=true
+      com.meizu.safe.alphame.permission.DATA: granted=true
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.REGISTER_WINDOW_MANAGER_LISTENERS: granted=true
+      android.permission.BIND_INCALL_SERVICE: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.meizu.flyme.sdkstage.permission.C2D_MESSAGE: granted=true
+      android.permission.CONFIGURE_WIFI_DISPLAY: granted=true
+      android.permission.CONFIGURE_DISPLAY_COLOR_MODE: granted=true
+      android.permission.ACCESS_WIMAX_STATE: granted=true
+      android.permission.SET_PROCESS_LIMIT: granted=true
+      com.meizu.safe.permission.default_protect: granted=true
+      com.android.launcher3.permission.READ_SETTINGS: granted=true
+      com.qualcomm.permission.READPROC: granted=true
+      android.permission.RESTART_PACKAGES: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.BIND_DEVICE_ADMIN: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_CHECKIN_PROPERTIES: granted=true
+      android.permission.ACCESS_MOCK_LOCATION: granted=true
+      com.meizu.flyme.filemanager.permission.READ_REMARKPROVIDER: granted=true
+      com.meizu.safe.push.permission.MESSAGE: granted=true
+      com.meizu.safe.permission.ANTI_VIRUS: granted=true
+      com.meizu.battery.permission.ui: granted=true
+      flyme.intent.action.facerecognition.ACTION_FROZEN_RESET: granted=true
+      android.permission.INSTALL_LOCATION_PROVIDER: granted=true
+      com.meizu.flyme.permission.UPDATE: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      com.meizu.flyme.appcenter.permission.EXTERNAL_INSTALL: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.BROADCAST_PHONE_ACCOUNT_REGISTRATION: granted=true
+      android.permission.CONTROL_LOCATION_UPDATES: granted=true
+      android.permission.GET_TOP_ACTIVITY_INFO: granted=true
+      com.meizu.assistant.permission.UPDATE_CARD: granted=true
+      android.permission.CLEAR_APP_USER_DATA: granted=true
+      com.meizu.pps.permission.READ_SETTINGS: granted=true
+      com.qihoo.antivirus.update.permission.block_sdk_104415: granted=true
+      android.permission.BROADCAST_CALLLOG_INFO: granted=true
+      android.permission.INSTALL_PACKAGES: granted=true
+      android.permission.SHUTDOWN: granted=true
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE: granted=true
+      android.permission.NFC: granted=true
+      com.meizu.flymelab.features.READ: granted=true
+      android.permission.NETWORK_SETTINGS: granted=true
+      android.permission.START_ANY_ACTIVITY: granted=true
+      android.permission.CALL_PRIVILEGED: granted=true
+      android.permission.MANAGE_APP_TOKENS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.MASTER_CLEAR: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      com.meizu.flyme.launcher.permission.READ_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      flyme.permission.ROOT_RECOVERY_STATE: granted=true
+      com.android.launcher3.permission.RECEIVE_LAUNCH_BROADCASTS: granted=true
+      android.permission.PEERS_MAC_ADDRESS: granted=true
+      android.permission.DEVICE_POWER: granted=true
+      com.android.launcher3.permission.WRITE_SETTINGS: granted=true
+      com.flyme.netadmin.push.permission.MESSAGE: granted=true
+      android.permission.REMOVE_TASKS: granted=true
+      android.permission.READ_PRINT_SERVICES: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      com.meizu.permission.WRITE_SCENE_INFO: granted=true
+      android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS: granted=true
+      com.meizu.safe.alphame.provider.permission: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CAPTURE_AUDIO_HOTWORD: granted=true
+      android.permission.WRITE_MEDIA_STORAGE: granted=true
+      android.permission.WRITE_BLOCKED_NUMBERS: granted=true
+      com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL: granted=true
+      android.permission.SET_ANIMATION_SCALE: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.ACCESS_SURFACE_FLINGER: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.meizu.safe.permission.QR_CODE_LOCAL_DB: granted=true
+      com.meizu.wifiadmin.permission.WIFI_CLICKED: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.browser.permission.READ_HISTORY_BOOKMARKS: granted=true
+      com.meizu.pps.push.permission.MESSAGE: granted=true
+      android.permission.GET_INTENT_SENDER_INTENT: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CONTROL_VPN: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      android.permission.READ_PRECISE_PHONE_STATE: granted=true
+      android.permission.MANAGE_FINGERPRINT: granted=true
+      com.qualcomm.permission.IZAT: granted=true
+      android.permission.BIND_CONNECTION_SERVICE: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCOUNT_MANAGER: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.INTERACT_ACROSS_USERS_FULL: granted=true
+      android.permission.BIND_APPWIDGET: granted=true
+      android.permission.STOP_APP_SWITCHES: granted=true
+      android.permission.BATTERY_STATS: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS: granted=true
+      android.permission.TETHER_PRIVILEGED: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      com.meizu.networkmanager.control_command: granted=true
+      com.flyme.telecom.usagedata.service.permissions.PRIVATE_BROADCAST: granted=true
+      android.permission.MOVE_PACKAGE: granted=true
+      android.permission.READ_BLOCKED_NUMBERS: granted=true
+      com.qualcomm.permission.wfd.QC_WFD: granted=true
+      android.permission.READ_SEARCH_INDEXABLES: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.TRIGGER_TIME_ZONE_RULES_CHECK: granted=true
+      android.permission.ACCESS_DOWNLOAD_MANAGER: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.HARDWARE_TEST: granted=true
+      android.permission.WRITE_SMS: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE: granted=true
+      android.permission.BIND_JOB_SERVICE: granted=true
+      android.permission.CONFIRM_FULL_BACKUP: granted=true
+      com.meizu.dataservice.push.permission.MESSAGE: granted=true
+      android.permission.SET_TIME: granted=true
+      android.permission.WRITE_APN_SETTINGS: granted=true
+      com.meizu.networkmanager.permission.OFFER_OR_UPDATE_DATA: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      com.meizu.battery.permission.service: granted=true
+      android.permission.PACKAGE_VERIFICATION_AGENT: granted=true
+      android.permission.SET_ORIENTATION: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.SET_PREFERRED_APPLICATIONS: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.BACKUP: granted=true
+      android.permission.CHANGE_CONFIGURATION: granted=true
+      android.permission.USER_ACTIVITY: granted=true
+      android.permission.LOCAL_MAC_ADDRESS: granted=true
+      android.permission.READ_LOGS: granted=true
+      android.permission.COPY_PROTECTED_DATA: granted=true
+      meizu.alphame.USER_BEHAVIOR: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      com.meizu.safe.SDK_PROVIDER: granted=true
+      android.permission.SET_KEYBOARD_LAYOUT: granted=true
+      android.permission.READ_NETWORK_USAGE_HISTORY: granted=true
+      com.meizu.mcare.push.permission.MESSAGE: granted=true
+      com.meizu.facerecognition.permission.ACTION_FROZEN_RESET: granted=true
+      android.permission.MANAGE_APP_OPS_RESTRICTIONS: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.MANAGE_USER_OEM_UNLOCK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.REQUEST_NETWORK_SCORES: granted=true
+      android.permission.WRITE_USER_DICTIONARY: granted=true
+      com.meizu.facerecognition.permission.FACE_RECOGNITION: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      broadcast.cne.permission: granted=true
+      android.permission.REBOOT: granted=true
+      meizu.permission.SWITCH_SYSTEM_MODES: granted=true
+      com.meizu.permission.READ_PRIVACY_NUMBER: granted=true
+      android.permission.OEM_UNLOCK_STATE: granted=true
+      android.permission.MANAGE_DEVICE_ADMINS: granted=true
+      android.permission.CLEAR_APP_CACHE: granted=true
+      com.meizu.battery.push.permission.MESSAGE: granted=true
+      android.permission.CHANGE_APP_IDLE_STATE: granted=true
+      com.meizu.pps.permission.WRITE_SETTINGS: granted=true
+      android.permission.MANAGE_NETWORK_POLICY: granted=true
+      com.meizu.stats.permission.READ_USAGESTATS: granted=true
+      com.qualcomm.permission.ACCESS_GTPWIFI_API: granted=true
+      android.permission.SET_POINTER_SPEED: granted=true
+      android.permission.MANAGE_NOTIFICATIONS: granted=true
+      android.permission.CONNECTIVITY_INTERNAL: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      com.android.browser.permission.WRITE_HISTORY_BOOKMARKS: granted=true
+      android.permission.OVERRIDE_WIFI_CONFIG: granted=true
+      android.permission.FORCE_STOP_PACKAGES: granted=true
+      com.meizu.permission.READ_SCENE_INFO: granted=true
+      meizu.permission.BIND_PRIVACY_CONTROLER: granted=true
+      android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS: granted=true
+      android.permission.ACCESS_NOTIFICATIONS: granted=true
+      com.meizu.remotecooperation.access.permission.JUMP: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.certinstaller.INSTALL_AS_USER: granted=true
+      android.permission.BIND_ACCESSIBILITY_SERVICE: granted=true
+      com.meizu.battery.provider.permission: granted=true
+      com.meizu.mstore.permission.appdownload: granted=true
+      com.meizu.safe.alphame.permission.DATA_CHANGE: granted=true
+      android.permission.READ_USER_DICTIONARY: granted=true
+      com.meizu.permission.CONTROL_VPN: granted=true
+      com.meizu.battery.permission.C2D_MESSAGE: granted=true
+      com.android.launcher3.permission.RECEIVE_FIRST_LOAD_BROADCAST: granted=true
+      com.meizu.safe.permission.QR_CODE_SCAN_SERVICE: granted=true
+      com.meizu.flyme.sdkstage.push.permission.MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.CHANGE_WIMAX_STATE: granted=true
+      com.meizu.flyme.update.push.permission.MESSAGE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.PACKET_KEEPALIVE_OFFLOAD: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.STATUS_BAR: granted=true
+      android.permission.READ_FRAME_BUFFER: granted=true
+      com.flyme.permission.PHONE_STATE: granted=true
+      com.meizu.permission.SEARCH_SETTINGS: granted=true
+      android.permission.DUMP: granted=true
+      android.permission.LOCATION_HARDWARE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.INJECT_EVENTS: granted=true
+      android.permission.BIND_NETWORK_RECOMMENDATION_SERVICE: granted=true
+      com.qihoo.antivirus.update.permission.clear_sdk_meizu: granted=true
+      android.permission.UPDATE_APP_OPS_STATS: granted=true
+      android.permission.DELETE_PACKAGES: granted=true
+      com.meizu.flyme.appcenter.permission.action.perform: granted=true
+    User 0: 
+      gids=[3009, 3002, 1023, 1015, 3003, 3001, 3007, 1021, 1000, 2002, 1010, 1007, 3006]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.READ_CALENDAR: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.RECEIVE_WAP_PUSH: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        com.meizu.stats.permission.WRITE_USAGESTATS: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.SEND_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        com.meizu.flyme.launcher.permission.UNINSTALL_SHORTCUT: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.CAMERA: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_CALENDAR: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.PROCESS_OUTGOING_CALLS: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT ]
+
+Package Changes:
+  Sequence number=111
+  User 0:
+    seq=0, package=com.meizu.mstore
+    seq=1, package=com.happyelements.AndroidAnimal
+    seq=2, package=com.meizu.flyme.gamecenter
+    seq=3, package=com.meizu.dataservice
+    seq=18, package=com.android.settings
+    seq=19, package=com.meizu.assistant
+    seq=28, package=com.meizu.netcontactservice
+    seq=39, package=com.meizu.gamecenter.service
+    seq=42, package=com.example.pengbo.textdemo
+    seq=45, package=com.flyme.videoclips
+    seq=46, package=com.ss.android.ugc.aweme
+    seq=47, package=com.flyme.meizu.store
+    seq=49, package=com.meizu.media.ebook
+    seq=52, package=ctrip.android.view
+    seq=54, package=com.sina.weibo
+    seq=55, package=com.android.browser
+    seq=57, package=com.ss.android.article.news
+    seq=58, package=com.meizu.compaign
+    seq=59, package=com.jingdong.app.mall
+    seq=97, package=com.sankuai.meituan
+    seq=98, package=com.sogou.activity.src
+    seq=99, package=com.meizu.media.reader
+    seq=109, package=com.taobao.taobao
+    seq=110, package=com.meizu.flyme.launcher
+
+
+Dexopt state:
+  [com.qualcomm.location]
+    path: /system/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+      arm64: /data/dalvik-cache/arm64/system@priv-app@com.qualcomm.location@com.qualcomm.location.apk@classes.dex[status
+      =kOatUpToDate, compilation_filter=speed-profile]
+
+
+Compiler stats:
+  [com.qualcomm.location]
+     com.qualcomm.location.apk - 833
